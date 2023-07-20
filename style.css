@@ -112,10 +112,67 @@ header {
 
 #dynamicText {
   opacity: 0;
-  position: absolute;
+  position: center;
   top: 50%;
-  left: calc(50% + 20px); /* Adjust the left position as needed */
-  transform: translate(-50%, -50%);
   font-size: 2rem;
   transition: opacity 0.5s ease-in-out;
 }
+
+.scroll-down-link {
+  position: absolute;
+  top: 600px;
+  right: -90px;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transform: rotate(90deg);
+  transform-origin: left top;
+  white-space: nowrap;
+  animation: moveUpDown 3s infinite alternate;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+@keyframes moveUpDown {
+  0% {
+    top: 600px;
+  }
+  50% {
+    top: 590px; /* Adjust the top position as desired */
+  }
+  100% {
+    top: 600px;
+  }
+}
+
+.scroll-down-link:hover {
+  text-shadow: 0 0 5px white; /* Add text shadow on hover */
+}
+
+.scroll-down-link.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.scroll-down-link.clicked {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#about,
+#experience,
+#contact {
+  background-color: #fff;
+  height: 50vh; 
+  padding: 50px; 
+}
+
+#skills,
+#portfolio {
+  background-color: #eaeae4; 
+  height: 50vh; 
+  padding: 50px; 
+}
+
+
