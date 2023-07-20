@@ -1,0 +1,25 @@
+.welcome-intro {
+  padding: 50vh 0;
+  background: rgb(6, 32, 61);
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+#dynamicText {
+  opacity: 0;
+  position: center;
+  top: 50%;
+  font-size: 2rem;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+#dynamicText.hidden {
+  opacity: 0;
+  visibility: hidden;
+}

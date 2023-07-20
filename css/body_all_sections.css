@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+#about,
+#experience,
+#contact {
+  background-color: #fff;
+  height: 50vh;
+  padding: 50px;
+}
+
+#skills,
+#portfolio {
+  background-color: #eaeae4;
+  height: 50vh;
+  padding: 50px;
+}
