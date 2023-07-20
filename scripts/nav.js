@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", () => {
 const header = document.querySelector("header");
 const sectionOne = document.querySelector(".welcome-intro");
 
@@ -16,3 +17,4 @@ const sectionOneObserver = new IntersectionObserver((entries) => {
 }, sectionOneOptions);
 
 sectionOneObserver.observe(sectionOne);
+});
