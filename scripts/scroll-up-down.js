@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const contactSection = document.getElementById("contact");
   const scrollUpLink = document.getElementById("scroll-up-link");
 
-
   // Scroll down behavior
   const handleDownIntersection = (entries) => {
     const [entry] = entries;
@@ -55,10 +54,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const targetSection = document.querySelector(
       scrollUpLink.getAttribute("href")
     );
-  
+
     targetSection.scrollIntoView({
       behavior: "smooth",
     });
   });
-    });
-
+});
