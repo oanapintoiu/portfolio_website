@@ -9,19 +9,18 @@
   transform: rotate(90deg);
   transform-origin: left top;
   white-space: nowrap;
-  animation: moveDown 3s infinite alternate; /* Use a unique name for the animation */
+  animation: moveDown 3s infinite alternate; 
   opacity: 1;
   visibility: visible;
   transition: opacity 0.3s, visibility 0.3s;
 }
 
 @keyframes moveDown {
-  /* Use a unique name for the keyframes */
   0% {
     top: 600px;
   }
   50% {
-    top: 590px; /* Adjust the top position as desired */
+    top: 590px;
   }
   100% {
     top: 600px;
@@ -29,7 +28,7 @@
 }
 
 .scroll-down-link:hover {
-  text-shadow: 0 0 5px white; /* Add text shadow on hover */
+  text-shadow: 0 0 5px white;
 }
 
 .scroll-down-link.hidden {
@@ -42,30 +41,28 @@
   visibility: hidden;
 }
 
-/* Scroll up link styles */
 .scroll-up-link {
   position: fixed;
   margin-top: 150px;
-  right: -40px; /* Adjust the right position as desired */
+  right: -40px; 
   color: #333;
   text-decoration: none;
   font-size: 1rem;
   transform: rotate(-90deg);
   transform-origin: left top;
   white-space: nowrap;
-  animation: moveUp 3s infinite alternate; /* Use a unique name for the animation */
+  animation: moveUp 3s infinite alternate;
   opacity: 1;
   visibility: visible;
   transition: opacity 0.3s, visibility 0.3s;
 }
 
 @keyframes moveUp {
-  /* Use a unique name for the keyframes */
   0% {
     top: 600px;
   }
   50% {
-    top: 590px; /* Adjust the top position as desired */
+    top: 590px; 
   }
   100% {
     top: 600px;
@@ -73,7 +70,7 @@
 }
 
 .scroll-up-link:hover {
-  text-shadow: 0 0 5px #333; /* Add text shadow on hover */
+  text-shadow: 0 0 5px #333; 
 }
 
 .scroll-up-link.hidden {
