@@ -1,15 +1,17 @@
-/* Scroll down link styles */
+/* Scroll down link */
 .scroll-down-link {
   position: absolute;
-  top: 600px;
-  right: -90px;
+  margin-top: 4%;
+  right: -6.3%;
+  max-height: 90%; 
+  min-height: 10%;
   color: white;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.2vw;
   transform: rotate(90deg);
   transform-origin: left top;
   white-space: nowrap;
-  animation: moveDown 3s infinite alternate; 
+  animation: moveDown 3s infinite alternate;
   opacity: 1;
   visibility: visible;
   transition: opacity 0.3s, visibility 0.3s;
@@ -17,13 +19,13 @@
 
 @keyframes moveDown {
   0% {
-    top: 600px;
+    top: 60%;
   }
   50% {
-    top: 590px;
+    top: 59%;
   }
   100% {
-    top: 600px;
+    top: 60%; 
   }
 }
 
@@ -41,13 +43,17 @@
   visibility: hidden;
 }
 
+/* Scroll up link */
+
 .scroll-up-link {
   position: fixed;
-  margin-top: 150px;
-  right: -40px; 
+  margin-top: 20%;
+  right: -3%;
+  max-height: 90%; 
+  min-height: 10%;
   color: #333;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.2vw;
   transform: rotate(-90deg);
   transform-origin: left top;
   white-space: nowrap;
@@ -59,18 +65,18 @@
 
 @keyframes moveUp {
   0% {
-    top: 600px;
+    top: 60%;
   }
   50% {
-    top: 590px; 
+    top: 59%;
   }
   100% {
-    top: 600px;
+    top: 60%; 
   }
 }
 
 .scroll-up-link:hover {
-  text-shadow: 0 0 5px #333; 
+  text-shadow: 0 0 5px #333;
 }
 
 .scroll-up-link.hidden {

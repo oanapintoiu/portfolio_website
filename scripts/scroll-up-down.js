@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const contactSection = document.getElementById("contact");
   const scrollUpLink = document.getElementById("scroll-up-link");
 
-  // Scroll down behavior
+  // Hide when intersecting with about section
   const handleDownIntersection = (entries) => {
     const [entry] = entries;
     if (entry.isIntersecting) {

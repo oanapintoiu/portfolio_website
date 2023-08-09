@@ -7,13 +7,13 @@ body {
 #experience,
 #contact {
   background-color: #fff;
-  height: 50vh;
-  padding: 50px;
+  height: 36vh;
+  padding: 4% 6%;
 }
 
 #skills,
 #portfolio {
   background-color: #eaeae4;
-  height: 50vh;
-  padding: 50px;
+  height: 36vh;
+  padding: 4% 6%;
 }

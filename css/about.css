@@ -1,0 +1,25 @@
+.home-about {
+  padding: 0% 0;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.columns {
+  display: flex;
+}
+
+.col + .col {
+  margin-left: 1.5em;
+}
+
+#about p {
+  font-size: 1.4vw;
+}
+
+.col h3 {
+  font-size: 1.5vw;
+}
+
+.col p {
+  font-size: 1.2vw;
+}

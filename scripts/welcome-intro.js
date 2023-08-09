@@ -3,7 +3,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const nextButton = document.getElementById("nextButton");
   const prevButton = document.getElementById("prevButton");
 
-  const words = ["Welcome to my Website.", "I am a Web Developer.", "Resourceful Project Manager.", "Experienced Transfomational Leader.","Passionate about People, Business and Tech.", "Caught your attention?", "Good.", "Scroll on Down to find out More."];
+  const words = [
+    "Welcome to my Website.",
+    "I am a Web Developer.",
+    "Resourceful Project Manager.",
+    "Experienced Transfomational Leader.",
+    "Passionate about People, Business and Tech.",
+    "Caught your attention?",
+    "Good.",
+    "Scroll on Down to find out More.",
+  ];
   const interval = 3000; // change the interval (in milliseconds) between word transitions
   let currentWordIndex = 0;
 
@@ -18,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         currentWordIndex = 0;
       }
       setTimeout(changeWord, interval);
-    }, 500); 
+    }, 500);
   };
 
   prevButton.addEventListener("click", () => {
@@ -26,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     dynamicText.style.opacity = 0;
     setTimeout(() => {
       dynamicText.textContent = words[currentWordIndex];
-      dynamicText.style.opacity = 1; 
+      dynamicText.style.opacity = 1;
     }, 500);
   });
 
@@ -35,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
     dynamicText.style.opacity = 0;
     setTimeout(() => {
       dynamicText.textContent = words[currentWordIndex];
-      dynamicText.style.opacity = 1; 
+      dynamicText.style.opacity = 1;
     }, 500);
   });
 
@@ -46,9 +55,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const handleIntersection = (entries) => {
     const [entry] = entries;
     if (entry.isIntersecting) {
-      dynamicText.classList.add("hidden"); 
+      dynamicText.classList.add("hidden");
     } else {
-      dynamicText.classList.remove("hidden"); 
+      dynamicText.classList.remove("hidden");
       nextButton.classList.remove("hidden");
       prevButton.classList.remove("hidden");
     }
@@ -63,15 +72,14 @@ document.addEventListener("DOMContentLoaded", () => {
       nextButton.classList.remove("hidden");
       prevButton.classList.remove("hidden");
     }
-  }
+  };
 
- 
   const observer = new IntersectionObserver(handleIntersection, {
     threshold: 0.15,
   });
-  const buttonObserver = new IntersectionObserver (handleButtonIntersection, {
+  const buttonObserver = new IntersectionObserver(handleButtonIntersection, {
     threshold: 0.1278,
-  })
+  });
 
   observer.observe(aboutSection);
   buttonObserver.observe(aboutSection);
