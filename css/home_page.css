@@ -60,3 +60,31 @@
 .manual-btn:not(:last-child){
   margin-right: 20px;
 }
+
+.manual-btn:hover {
+  background: rgb(6, 32, 61);
+}
+
+#radio_1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio_2:checked ~ .first {
+  margin-left: -100%;
+}
+
+#radio_3:checked ~ .first {
+  margin-left: -200%;
+}
+
+#radio_4:checked ~ .first {
+  margin-left: -300%;
+}
+
+#radio_5:checked ~ .first {
+  margin-left: -400%;
+}
+
+#radio_6:checked ~ .first {
+  margin-left: -500%;
+}
