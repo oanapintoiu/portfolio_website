@@ -16,3 +16,24 @@
   overflow: hidden;
   box-shadow: 0 0 20px 10px #ffffff8b;
 }
+
+.slide img {
+  width: 1000px;
+  height: 600px;
+}
+
+.slides {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  position: relative;
+  width: 100%;
+  transition: 2s;
+}
