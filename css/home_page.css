@@ -5,8 +5,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(6, 32, 61);
-  color: white;
+  background-image: radial-gradient(ellipse, #0000, #0007),
+    linear-gradient(0deg, rgba(153, 119, 34, 0.447), rgba(153, 119, 34, 0.039)),
+    /* linear-gradient(0deg, rgba(0, 0, 0, 0.812), rgba(153, 119, 34, 0.039)), */
+      url(https://i.ibb.co/vJt5HSh/noisy-texture-300x300-o10-d10-c-a82851-t1.png),
+    url(../images/background.jpg);
+  background-size: auto, auto, auto, cover;
+  background-repeat: repeat;
+  background-position: center;
+  filter: blur(0.04em) saturate(0.7) contrast(1.5) brightness(1);
 }
 
 /* slide container */
@@ -55,7 +62,7 @@
 
 .manual-btn,
 .navigation-auto div {
-  border: 3px solid rgb(6, 32, 61);
+  border: 3px solid forestgreen;
   padding: 5px;
   border-radius: 10px;
   transition: 1s;
@@ -68,7 +75,7 @@
 }
 
 .manual-btn:hover {
-  background: rgb(6, 32, 61);
+  background: forestgreen;
 }
 
 #radio_1:checked ~ .first {
@@ -96,9 +103,42 @@
 }
 
 /* auto buttons navigation */
-#radio_1:checked ~ .navigation-auto .auto-btn1 {background: rgb(6, 32, 61);}
-#radio_2:checked ~ .navigation-auto .auto-btn2 {background: rgb(6, 32, 61);}
-#radio_3:checked ~ .navigation-auto .auto-btn3 {background: rgb(6, 32, 61);}
-#radio_4:checked ~ .navigation-auto .auto-btn4 {background: rgb(6, 32, 61);}
-#radio_5:checked ~ .navigation-auto .auto-btn5 {background: rgb(6, 32, 61);}
-#radio_6:checked ~ .navigation-auto .auto-btn6 {background: rgb(6, 32, 61);}
+#radio_1:checked ~ .navigation-auto .auto-btn1 {background: forestgreen;}
+#radio_2:checked ~ .navigation-auto .auto-btn2 {background: forestgreen;}
+#radio_3:checked ~ .navigation-auto .auto-btn3 {background: forestgreen;}
+#radio_4:checked ~ .navigation-auto .auto-btn4 {background: forestgreen;}
+#radio_5:checked ~ .navigation-auto .auto-btn5 {background: forestgreen;}
+#radio_6:checked ~ .navigation-auto .auto-btn6 {background: forestgreen;}
+
+/* text on images */
+.caption-container {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 10px; 
+  border-radius: 10px;
+  font-size: 18px; 
+  transition: all 0.3s;
+}
+
+.caption {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  line-height: 50px;
+  color: #ffeb3b;
+}
+
+.caption span {
+  text-decoration: initial;
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 18px;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
