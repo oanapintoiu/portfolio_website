@@ -40,7 +40,8 @@
 }
 
 /* manual and auto buttons */
-.navigation-manual {
+.navigation-manual,
+.navigation-auto {
   position: absolute;
   width: 1000px;
   margin-top: 38vw;
