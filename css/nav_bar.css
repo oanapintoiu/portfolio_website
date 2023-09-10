@@ -18,36 +18,53 @@ header {
 }
 
 .name {
-  font-weight: 500;
-  font-size: 1.2vw;
-  color: var(--text);
-  text-decoration: none;
-  margin: 0 3%;
-}
-
-.nav__list {
-  list-style: none;
-  display: flex;
-  margin: 0 -2%;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1vw;
   color: var(--text);
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin: 0 3%;
+  font-family: 'Montserrat', sans-serif;
+  list-style: none;
+  text-decoration: none;
 }
 
-.nav__link {
-  --spacing: 1em;
+.navlist {
+  list-style: none;
+  display: flex;
+}
+
+#menu-icon {
+cursor: pointer;
+color: var(--text);
+font-size: 27px;
+margin: 0 3%;
+}
+
+.nav-menu {
+  margin-right: 3%;
+}
+.navlist a {
+  position: relative;
+  margin: 0 0%;
+  font-weight: 600;
+  font-size: 0.8vw;
+  color: var(--text);
+  text-decoration: none;
+  --spacing: 0.6em;
   text-decoration: none;
   color: inherit;
   display: inline-block;
   padding: calc(var(--spacing) / 2) var(--spacing);
-  position: relative;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 0.8vw;
+  letter-spacing: 1.5px;
+  font-family: 'Montserrat', sans-serif;
+  list-style: none;
+  text-decoration: none;
 }
 
-.nav__link:after {
+.navlist a:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -59,38 +76,31 @@ header {
   transition: transform 150ms ease-in-out;
 }
 
-.nav__link:hover::after {
+.navlist a:hover::after {
   transform: scaleX(1);
 }
 
-.nav__link--btn {
-  border: 1.5px solid currentColor;
-  border-radius: 2em;
-  margin-left: 1em;
-  right: 7em;
+.navlink-btn {
   transition: background 250ms ease-in-out;
-  letter-spacing: 1px;
-  padding: 0.8em 1em;
-  font-size: 0.8vw;
 }
 
-.nav__link--btn:hover {
+.navlink-btn:hover {
   background: var(--text);
   color: var(--text-inverse);
   border-color: var(--text);
 }
 
-.nav__link--btn::after {
+.navlink-btn::after {
   display: none;
 }
 
-.nav__link--btn--highlight--github {
-  background: #6cc644;
-  border-color: #6cc644;
+.github {
+  background: forest;
+  border-color: forestgreen;
   color: #333;
 }
 
-.nav__link--btn--highlight--github:hover {
+.github:hover {
   background: var(--text);
   border-color: var(--text);
 }

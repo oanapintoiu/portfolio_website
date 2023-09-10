@@ -1,73 +1,140 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, inittial scale=1" />
     <title>Oana Pintoiu Resume</title>
 
+    <!-- CSS link -->
     <link rel="stylesheet" type="text/css" href="css/master.css" />
+
+    <!-- boxicons -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!-- remixicons link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;700;800&family=Mulish:wght@200;300;400;500;600;700;800;1000&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <!-- NAVBAR -->
     <header id="navbar">
-      <a href="#" class="name">Oana Pintoiu</a>
-      <nav class="social_media">
-        <ul class="nav__list">
-          <li class="nav__list-item">
+      <a class="name">Oana Pintoiu</a>
+      <nav class="social-media">
+        <ul class="navlist">
+          <li>
             <a
-              class="nav__link nav__link--btn"
+              class="navlink-btn"
               href="https://www.linkedin.com/in/oanapintoiu/"
               target="_blank"
               >LinkedIn</a
             >
           </li>
-          <li class="nav__list-item">
+          <li>
             <a
-              class="nav__link nav__link--btn nav__link--btn--highlight--github"
+              class="navlink-btn github"
               href="https://github.com/oanapintoiu"
               target="_blank"
               >Github</a
             >
           </li>
-          <li class="nav__list-item">
-            <a class="nav__link nav__link--btn" href="#">Resume</a>
-          </li>
+          <li><a class="navlink-btn" href="#">Resume</a></li>
         </ul>
       </nav>
       <nav class="main-nav">
-        <ul class="nav__list">
-          <li class="nav__list-item">
-            <a href="#welcome-intro" class="nav__link">Home</a>
-          </li>
-          <li class="nav__list-item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__list-item">
-            <a href="#skills" class="nav__link">Skills</a>
-          </li>
-          <li class="nav__list-item">
-            <a href="#experience" class="nav__link">Experience</a>
-          </li>
-          <li class="nav__list-item">
-            <a href="#portofolio" class="nav__link">Portfolio</a>
-          </li>
-          <li class="nav__list-item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
+        <ul class="navlist">
+          <li><a href="#home_page" class="navlink">Home</a></li>
+          <li><a href="#about" class="navlink">About</a></li>
+          <li><a href="#skills" class="navlink">Skills</a></li>
+          <li><a href="#experience" class="navlink">Experience</a></li>
+          <li><a href="#portofolio" class="navlink">Portfolio</a></li>
+          <li><a href="#contact" class="navlink">Contact</a></li>
         </ul>
       </nav>
+      <div class="nav-menu">
+        <div class="bx bx-menu bx=md" id="menu-icon"></div>
+      </div>
     </header>
 
     <main>
       <!-- SECTION WELCOME -->
-      <section class="welcome-intro" id="welcome-intro">
-        <span id="dynamicText"></span>
-        <div>
-          <button id="prevButton"><</button>
-          <button id="nextButton">></button>
+      <section class="home_page" id="home_page">
+        <div class="background-wrapper">
+          <div class="slider">
+            <div class="slides">
+              <!-- slide images -->
+              <div class="slide first">
+                <img src="images/welcome.jpg" alt="welcome to my webpage" />
+                <div class="caption-container">
+                  <div class="caption">
+                    <span>Hello, I'm</span>Oana (Wah'nah)
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <img src="images/dev.jpg" alt="web dev" />
+                <div class="caption-container">
+                  <div class="caption"><span>I'm a</span>Web Developer</div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <img src="images/pm.jpg" alt="project manager" />
+                <div class="caption-container">
+                  <div class="caption">
+                    <span>Resourceful</span>Project Manager
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <img src="images/leader.jpg" alt="leader" />
+                <div class="caption-container">
+                  <div class="caption">
+                    <span>Experienced</span>Transformational Leader
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <img src="images/passion.jpg" alt="passion for work" />
+                <div class="caption-container">
+                  <div class="caption">
+                    <span>Passionate about</span>People, Business and Tech
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <img src="images/curious.jpg" alt="curious" />
+                <div class="caption-container">
+                  <div class="caption">
+                    <span>Want to find out more?</span>Scroll on Down
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- scroll down button -->
         <a id="scroll-down-link" href="#about" class="scroll-down-link"
-          >Scroll Down > > ></a
-        >
+          ><i class="bx bxs-chevrons-down"></i
+        ></a>
       </section>
 
       <!-- SECTION ABOUT -->
@@ -119,6 +186,7 @@
             </div>
           </div>
 
+          <!-- left column -->
           <div class="left-column">
             <div class="skill-type">
               <h3>Programming <strong>Skills</strong></h3>
@@ -158,6 +226,7 @@
             </div>
           </div>
 
+          <!-- right column -->
           <div class="columns-container">
             <div class="right-column">
               <div class="skill-type">
@@ -219,9 +288,10 @@
         <!-- content here -->
       </section>
 
-      <a id="scroll-up-link" href="#welcome-intro" class="scroll-up-link"
-        >Scroll Up > > ></a
-      >
+      <!-- scroll up button -->
+      <a id="scroll-up-link" href="#home_page" class="scroll-up-link"
+        ><i class="bx bxs-chevrons-up"></i
+      ></a>
     </main>
 
     <script src="scripts/master.js"></script>

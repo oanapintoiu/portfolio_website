@@ -1,0 +1,88 @@
+/* Scroll down link */
+.scroll-down-link {
+  position: absolute;
+  margin-top: 15%;
+  right: 2%;
+  max-height: 90%;
+  min-height: 10%;
+  color: white;
+  text-decoration: none;
+  font-size: 2vw;
+  transform-origin: left top;
+  white-space: nowrap;
+  animation: moveDown 3s infinite alternate;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+@keyframes moveDown {
+  0% {
+    top: 60%;
+  }
+  50% {
+    top: 59%;
+  }
+  100% {
+    top: 60%;
+  }
+}
+
+.scroll-down-link:hover {
+  text-shadow: 0 0 5px white;
+}
+
+.scroll-down-link.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.scroll-down-link.clicked {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Scroll up link */
+
+.scroll-up-link {
+  position: fixed;
+  margin-top: 18%;
+  right: 2%;
+  max-height: 90%;
+  min-height: 10%;
+  color: #333;
+  text-decoration: none;
+  font-size: 2vw;
+  transform-origin: left top;
+  white-space: nowrap;
+  animation: moveUp 3s infinite alternate;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+@keyframes moveUp {
+  0% {
+    top: 60%;
+  }
+  50% {
+    top: 59%;
+  }
+  100% {
+    top: 60%;
+  }
+}
+
+.scroll-up-link:hover {
+  text-shadow: 0 0 5px #333;
+}
+
+.scroll-up-link.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.scroll-up-link.clicked {
+  opacity: 0;
+  visibility: hidden;
+}
