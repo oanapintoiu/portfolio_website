@@ -9,6 +9,7 @@
   color: white;
 }
 
+/* slide container */
 .slider {
   width: 1000px;
   height: 600px;
@@ -38,6 +39,7 @@
   transition: 2s;
 }
 
+/* manual and auto buttons */
 .navigation-manual {
   position: absolute;
   width: 1000px;
@@ -58,6 +60,7 @@
   transition: 1s;
 }
 
+/* manual button navigation */
 .manual-btn:not(:last-child),
 .navigation-auto div:not(:last-child){
   margin-right: 20px;
@@ -90,3 +93,11 @@
 #radio_6:checked ~ .first {
   margin-left: -500%;
 }
+
+/* auto buttons navigation */
+#radio_1:checked ~ .navigation-auto .auto-btn1 {background: rgb(6, 32, 61);}
+#radio_2:checked ~ .navigation-auto .auto-btn2 {background: rgb(6, 32, 61);}
+#radio_3:checked ~ .navigation-auto .auto-btn3 {background: rgb(6, 32, 61);}
+#radio_4:checked ~ .navigation-auto .auto-btn4 {background: rgb(6, 32, 61);}
+#radio_5:checked ~ .navigation-auto .auto-btn5 {background: rgb(6, 32, 61);}
+#radio_6:checked ~ .navigation-auto .auto-btn6 {background: rgb(6, 32, 61);}
