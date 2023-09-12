@@ -1,14 +1,13 @@
 main {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   /* font-family: 'Montserrat', sans-serif; */
   font-family: "Mulish", sans-serif;
   list-style: none;
-  outline: none;
-  border: none;
   scroll-behavior: smooth;
   text-decoration: none;
+  min-height: 100vh;
+  width: 100%;
 }
 
 body {
@@ -24,7 +23,7 @@ html {
 #experience,
 #contact {
   background-color: #fff;
-  height: 36vh;
+  height: 16em;
   padding: 4% 6%;
   overflow: hidden;
 }
@@ -32,7 +31,17 @@ html {
 #skills,
 #portfolio {
   background-color: #eaeae4;
-  height: 36vh;
+  height: 16em;
   padding: 4% 6%;
   overflow: hidden;
+}
+
+@media (max-width: 700px) {
+  #about,
+  #experience,
+  #contact,
+  #skills,
+  #portfolio {
+    padding: 2% 3%;
+}
 }

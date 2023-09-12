@@ -18,16 +18,16 @@
 
 /* slide container */
 .slider {
-  width: 1000px;
-  height: 600px;
+  width: 70vw;
+  height: 75vh;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 0 20px 10px #ffffff8b;
 }
 
 .slide img {
-  width: 1000px;
-  height: 600px;
+  width: 70vw;
+  height: 75vh;
 }
 
 .slides {
@@ -50,7 +50,7 @@
 .navigation-manual,
 .navigation-auto {
   position: absolute;
-  width: 1000px;
+  width: 70vw;
   margin-top: 38vw;
   display: flex;
   justify-content: center;
@@ -70,7 +70,7 @@
 
 /* manual button navigation */
 .manual-btn:not(:last-child),
-.navigation-auto div:not(:last-child){
+.navigation-auto div:not(:last-child) {
   margin-right: 20px;
 }
 
@@ -103,22 +103,34 @@
 }
 
 /* auto buttons navigation */
-#radio_1:checked ~ .navigation-auto .auto-btn1 {background: forestgreen;}
-#radio_2:checked ~ .navigation-auto .auto-btn2 {background: forestgreen;}
-#radio_3:checked ~ .navigation-auto .auto-btn3 {background: forestgreen;}
-#radio_4:checked ~ .navigation-auto .auto-btn4 {background: forestgreen;}
-#radio_5:checked ~ .navigation-auto .auto-btn5 {background: forestgreen;}
-#radio_6:checked ~ .navigation-auto .auto-btn6 {background: forestgreen;}
+#radio_1:checked ~ .navigation-auto .auto-btn1 {
+  background: forestgreen;
+}
+#radio_2:checked ~ .navigation-auto .auto-btn2 {
+  background: forestgreen;
+}
+#radio_3:checked ~ .navigation-auto .auto-btn3 {
+  background: forestgreen;
+}
+#radio_4:checked ~ .navigation-auto .auto-btn4 {
+  background: forestgreen;
+}
+#radio_5:checked ~ .navigation-auto .auto-btn5 {
+  background: forestgreen;
+}
+#radio_6:checked ~ .navigation-auto .auto-btn6 {
+  background: forestgreen;
+}
 
 /* text on images */
 .caption-container {
   position: absolute;
   top: 15px;
   left: 15px;
-  background-color: rgba(0, 0, 0, 0.5); 
-  padding: 10px; 
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
   border-radius: 10px;
-  font-size: 18px; 
+  font-size: 1.1rem;
   transition: all 0.3s;
 }
 
@@ -126,7 +138,7 @@
   margin: 0;
   padding: 0;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 1.8rem;
   text-transform: uppercase;
   letter-spacing: -1px;
   line-height: 50px;
@@ -135,7 +147,7 @@
 
 .caption span {
   text-decoration: initial;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 300;
   color: #fff;
   line-height: 18px;

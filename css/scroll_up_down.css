@@ -7,7 +7,7 @@
   min-height: 10%;
   color: #f4f4f4;
   text-decoration: none;
-  font-size: 2vw;
+  font-size: 1.8rem;
   transform-origin: left top;
   white-space: nowrap;
   animation: moveDown 3s infinite alternate;
@@ -51,7 +51,7 @@
   min-height: 10%;
   color: #333;
   text-decoration: none;
-  font-size: 2vw;
+  font-size: 1.8rem;
   transform-origin: left top;
   white-space: nowrap;
   animation: moveUp 3s infinite alternate;

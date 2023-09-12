@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", () => {
 const radioButtons = document.querySelectorAll('input[name="images"]');
 let counter = 0;
 let intervalId; // Variable to store the interval ID
@@ -23,3 +24,4 @@ radioButtons.forEach((button, index) => {
 
 // Start the initial interval
 intervalId = setInterval(changeRadioButton, 4000);
+});

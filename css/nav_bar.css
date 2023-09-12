@@ -3,6 +3,7 @@ header {
   --text-inverse: #333;
   --background: transparent;
   position: fixed;
+  font-size: 0.75rem;
   top: 0;
   left: 5.8%;
   right: 5.8%;
@@ -19,18 +20,19 @@ header {
 
 .name {
   font-weight: 600;
-  font-size: 1vw;
+  font-size: 0.9rem;
   color: var(--text);
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  margin: 0 3%;
+  margin: 0 5%;
   font-family: 'Montserrat', sans-serif;
   list-style: none;
   text-decoration: none;
 }
 
-.navlist {
+.navlist, 
+.social-media {
   list-style: none;
   display: flex;
 }
@@ -38,22 +40,22 @@ header {
 #menu-icon {
 cursor: pointer;
 color: var(--text);
-font-size: 27px;
-margin: 0 3%;
+font-size: 1.4rem;
+z-index: 10001;
+display: none;
 }
 
 .nav-menu {
   margin-right: 3%;
 }
+
 .navlist a {
   position: relative;
   margin: 0 0%;
   font-weight: 600;
-  font-size: 0.8vw;
+  font-size: 0.75rem;
   color: var(--text);
-  text-decoration: none;
   --spacing: 0.6em;
-  text-decoration: none;
   color: inherit;
   display: inline-block;
   padding: calc(var(--spacing) / 2) var(--spacing);
@@ -84,6 +86,10 @@ margin: 0 3%;
   transition: background 250ms ease-in-out;
 }
 
+.separator {
+  padding-right: 120px; 
+}
+
 .navlink-btn:hover {
   background: var(--text);
   color: var(--text-inverse);
@@ -111,3 +117,58 @@ margin: 0 3%;
   --background: #f4f4f4;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
 }
+
+#social-media-icon {
+  display: none;
+}
+
+@media ( max-width: 1200px) {
+  #menu-icon,
+  #social-media-icon {
+    display: block;
+  }
+
+  .social-media-icons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navlist {
+    position: absolute;
+    top: calc(100% + -16px);
+    right: -100%;
+    max-width: 25vw; 
+  background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 20px;
+    transition: all .55s ease;
+  }
+
+  .navlist .navlink-btn:nth-child(-n+3) {
+    display: none !important;
+  }
+
+  .navlist a{
+    margin-left: 0;
+    display: block;
+    margin: 5px 0;
+    color: #f4f4f4 !important;
+  }
+
+  .navlist.open{
+     right: 0;
+  }
+
+  .header {
+    font-size: 0.6rem; 
+    padding: 0.5% 0; 
+  }
+
+  .name {
+    font-size: 0.75rem
+  }
+};
+
+  
