@@ -85,3 +85,21 @@
   opacity: 0;
   visibility: hidden;
 }
+
+@media (max-width: 1000px) {
+  .scroll-down-link {
+    position: absolute;
+    margin-top: 45%;
+    right: 2%;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .scroll-down-link {
+    position: absolute;
+    margin-top: 60%;
+    right: 2%;
+    font-size: 1.2rem;
+  }
+}
