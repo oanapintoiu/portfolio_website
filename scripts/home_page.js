@@ -9,7 +9,7 @@ function changeRadioButton() {
   radioButtons[counter].checked = false;
   counter = (counter + 1) % radioButtons.length;
   radioButtons[counter].checked = true;
-  intervalId = setInterval(changeRadioButton, 4000); // Start a new interval
+  intervalId = setInterval(changeRadioButton, 3000); // Start a new interval
 }
 
 // Add a click event listener to each radio button
@@ -18,10 +18,10 @@ radioButtons.forEach((button, index) => {
     clearInterval(intervalId); // 
     counter = index; // Set the counter to the clicked button's index
     radioButtons[counter].checked = true; 
-    intervalId = setInterval(changeRadioButton, 4000); 
+    intervalId = setInterval(changeRadioButton, 3000); 
   });
 });
 
 // Start the initial interval
-intervalId = setInterval(changeRadioButton, 4000);
+intervalId = setInterval(changeRadioButton, 3000);
 });

@@ -135,7 +135,7 @@ header {
 
   .navlist {
     position: absolute;
-    top: calc(100% + -16px);
+    top: 70%;
     right: -100%;
     max-width: 25vw;
     width: auto;

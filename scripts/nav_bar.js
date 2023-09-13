@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const sectionOne = document.querySelector(".home_page");
 
   const sectionOneOptions = {
-    rootMargin: "-150px 0px 0px 0px",
+    rootMargin: "-50px 0px 0px 0px",
   };
 
   const sectionOneObserver = new IntersectionObserver((entries) => {

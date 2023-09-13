@@ -162,17 +162,17 @@
   }
 
   .caption-container {
-    top: 5%;
-    left: 5%;
+    top: 3%;
+    left: 3%;
     padding: 2%;
   }
 
   .caption {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 
   .caption span {
-    font-size: 0.5rem;
+    font-size: 0.4rem;
   }
 
   .navigation-manual,

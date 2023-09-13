@@ -4,22 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const contactSection = document.getElementById("contact");
   const scrollUpLink = document.getElementById("scroll-up-link");
 
-  // Hide when intersecting with about section
-  const handleDownIntersection = (entries) => {
-    const [entry] = entries;
-    if (entry.isIntersecting) {
-      scrollDownLink.classList.add("hidden");
-    } else {
-      scrollDownLink.classList.remove("hidden");
-    }
-  };
-
-  const downObserver = new IntersectionObserver(handleDownIntersection, {
-    threshold: 0.15,
-  });
-
-  downObserver.observe(aboutSection);
-
   // Scroll down behavior
   scrollDownLink.addEventListener("click", (event) => {
     event.preventDefault();

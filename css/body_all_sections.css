@@ -23,15 +23,20 @@ html {
 #experience,
 #contact {
   background-color: #fff;
-  height: 16em;
-  padding: 4% 6%;
-  overflow: hidden;
 }
 
 #skills,
 #portfolio {
   background-color: #eaeae4;
-  height: 16em;
+ 
+}
+
+#about,
+#experience,
+#contact,
+#skills,
+#portfolio {
+  height: 45em;
   padding: 4% 6%;
   overflow: hidden;
 }
@@ -42,6 +47,6 @@ html {
   #contact,
   #skills,
   #portfolio {
-    padding: 2% 3%;
+    padding: 5% 7%;
 }
 }

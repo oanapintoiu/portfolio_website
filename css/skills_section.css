@@ -31,6 +31,14 @@
   margin: 2% 0 0;
 }
 
+.right-column {
+  width: 50%;
+  padding: 0 0;
+  box-sizing: border-box;
+  float: left;
+  margin: 2% 0 0;
+}
+
 .skill-type {
   margin-bottom: 2%;
 }
