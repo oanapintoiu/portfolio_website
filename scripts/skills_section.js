@@ -20,10 +20,11 @@ document.addEventListener("DOMContentLoaded", () => {
       if (entry.isIntersecting) {
         skillSectionVisible = true;
         animateSkillBars();
-      } else {
-        skillSectionVisible = false;
-        unfillSkillBars();
-      }
+      } 
+      // else {
+      //   skillSectionVisible = false;
+      //   unfillSkillBars();
+      // }
     });
   };
 
@@ -33,16 +34,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const skillSection = document.querySelector(".skill-type");
   skillObserver.observe(skillSection);
-
-  const handleScroll = () => {
-    if (!skillSectionVisible) {
-      const rect = skillSection.getBoundingClientRect();
-      if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
-        skillSectionVisible = true;
-        animateSkillBars();
-      }
-    }
-  };
-
-  window.addEventListener("scroll", handleScroll);
 });

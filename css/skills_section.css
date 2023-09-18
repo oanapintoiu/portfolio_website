@@ -78,7 +78,7 @@
     rgba(252, 103, 103, 1) 100%
   );
   width: 0;
-  transition: width 1s ease-in-out;
+  transition: width 2.5s ease-in-out;
 }
 
 .bar span::after {
