@@ -43,7 +43,7 @@
 }
 
 .col p {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .col {
@@ -57,7 +57,7 @@
     padding: 10% 0;
     margin-bottom: 10px;
   }
-  
+
   .about h2 {
     font-size: 1.3rem; /
   }
@@ -68,9 +68,8 @@
   .col h3 {
     font-size: 0.9rem;
   }
-  
+
   .col p {
     font-size: 0.7rem;
   }
 }
-

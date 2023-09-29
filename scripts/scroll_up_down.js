@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  const welcomeSection = document.getElementById("portofolio");
+  const welcomeSection = document.getElementById("portfolio");
   const upObserver = new IntersectionObserver(handleUpIntersection, {
     threshold: 0.8,
   });
