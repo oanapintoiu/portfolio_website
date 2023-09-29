@@ -1,85 +1,110 @@
-.home_page{
-    margin: 0;
-    padding: 0;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    align-items: center;
+.home_page {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
-.animated-text{
-    font-size: 2rem;
-    font-weight: 600;
-    min-width: 100%;
-    position: relative;
-    right: 10%;
-    text-align: center;
+.animated-text {
+  font-size: 2rem;
+  font-weight: 600;
+  min-width: 100%;
+  position: relative;
+  right: 10%;
+  text-align: center;
 }
 
-.animated-text span{
-    position: absolute;
-    margin: 0 10px;
+.animated-text span {
+  position: absolute;
+  margin: 0 10px;
 }
 
-.animated-text span::before{
-    content: "Oana (Wah'nah).";
-    color: #ff7f50;
-    animation: words 16s infinite;
+.animated-text span::before {
+  content: "Oana (Wah'nah).";
+  color: #ff7f50;
+  animation: words 16s infinite;
 }
 
-.animated-text span::after{
-    content: "";
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    background-color: #6B6C6A;
-    border-left: 2px solid #ff7f50;
-    right: -8px;
-    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+.animated-text span::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: #6b6c6a;
+  border-left: 2px solid #ff7f50;
+  right: -8px;
+  animation: cursor 0.8s infinite, typing 20s steps(14) infinite;
 }
 
 @keyframes cursor {
-    to{
-        border-left: 2px solid #ff7f5000;
-    }
+  to {
+    border-left: 2px solid #ff7f5000;
+  }
 }
 
 @keyframes words {
-    0%, 25% {
-        content: "Full Stack Developer.";
-    }
-    26%, 50% {
-        content: "Project Manager.";
-    }
-    51%, 75% {
-        content: "People Leader.";
-    }
-    76%, 100% {
-        content: "Business Enthusiast.";
-    }
+  0%,
+  25% {
+    content: "Full Stack Developer.";
+  }
+  26%,
+  50% {
+    content: "Project Manager.";
+  }
+  51%,
+  75% {
+    content: "People Leader.";
+  }
+  76%,
+  100% {
+    content: "Business Enthusiast.";
+  }
 }
 
 @keyframes typing {
-    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
-        width: 0;
-    }
-    5%,20%,25%,40%,45%,60%,65%,80%,85%{
-        width: calc(100% + 8px);
-    }
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0;
+  }
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 8px);
+  }
 }
 
 @media (max-width: 768px) {
+  .animated-text {
+    font-size: 1rem;
+    right: 20%;
+  }
 
-    .animated-text{
-        font-size: 1rem;
-        right: 20%;
-    }
-    
-    .animated-text span{
-        margin: 0 8px;
-        white-space: nowrap;
-    }
+  .animated-text span {
+    margin: 0 8px;
+    white-space: nowrap;
+  }
 }
