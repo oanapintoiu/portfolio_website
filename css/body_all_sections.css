@@ -19,15 +19,62 @@ html {
   overflow-x: hidden;
 }
 
-#about,
-#experience,
-#contact {
-  background-color: #eaeae4;
+#about {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9)
+  ),
+  url(../images/hello.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+height: 100vh;
 }
+#experience {
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url(../images/peak.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+}
+
+#contact {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9)
+  ),
+  url(../images/getintouch.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+height: 85vh;
+}
+
 
 #skills,
 #portfolio {
-  background-color: #fff;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)
+  ),
+  url(../images/background.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+height: 100vh;
+  background-color: #fafafa;
 }
 
 #about,
@@ -40,7 +87,7 @@ html {
 }
 
 #skills {
-  min-height: 35em;
+  min-height: 45em;
   padding: 4% 6%;
   overflow: hidden;
 }

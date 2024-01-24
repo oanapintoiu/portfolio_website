@@ -10,6 +10,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -30,7 +31,7 @@
 }
 
 .animated-text span::before {
-  content: "Oana (Wah'nah).";
+  content: "text";
   color: #ff7f50;
   animation: words 16s infinite;
 }
@@ -63,11 +64,11 @@
   }
   51%,
   75% {
-    content: "People Leader.";
+    content: "Transformational Leader.";
   }
   76%,
   100% {
-    content: "Business Enthusiast.";
+    content: "Transition Strategist.";
   }
 }
 

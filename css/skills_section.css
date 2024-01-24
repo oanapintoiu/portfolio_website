@@ -4,16 +4,19 @@
 
 .skills h2 {
   font-size: 2rem;
+  color: #d3c9c9;
 }
 
 .column-title h3 {
   font-size: 1.5rem;
+  color: #F7B787;
 }
 
 .skill-type h5 {
   margin: 0 10px 0 0;
   font-size: 1.1rem;
   min-width: 100px;
+  color: #d3c9c9;
 }
 
 .column-description p {
@@ -74,8 +77,8 @@
   height: 100%;
   background: linear-gradient(
     135deg,
-    rgba(236, 0, 140, 1) 0%,
-    rgba(252, 103, 103, 1) 100%
+    #e66739 0%,
+    #d89076 100%
   );
   width: 0;
   transition: width 2.5s ease-in-out;
@@ -88,7 +91,7 @@
   font-size: 0.7rem;
   top: 50%;
   right: 1%;
-  color: #fff;
+  color: #fafafa;
 }
 
 @media screen and (max-width: 700px) {
