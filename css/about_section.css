@@ -39,9 +39,14 @@
   color: #d3c9c9;
 }
 
+.about h3 {
+  font-size: 1.5rem;
+  color: #d3c9c9;
+}
+
 .col h3 {
   font-size: 1.5rem;
-  color: #F7B787;
+  color: #f7b787;
 }
 
 .col p {

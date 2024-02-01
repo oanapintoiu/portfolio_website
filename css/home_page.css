@@ -33,7 +33,7 @@
 .animated-text span::before {
   content: "text";
   color: #ff7f50;
-  animation: words 16s infinite;
+  animation: words 12s infinite;
 }
 
 .animated-text span::after {
@@ -55,20 +55,16 @@
 
 @keyframes words {
   0%,
-  25% {
-    content: "Full Stack Developer.";
+  33% {
+    content: "Software Developer.";
   }
-  26%,
-  50% {
-    content: "Project Manager.";
+  34%,
+  66.66% {
+    content: "Programme Manager.";
   }
-  51%,
-  75% {
-    content: "Transformational Leader.";
-  }
-  76%,
+  67%,
   100% {
-    content: "Transition Strategist.";
+    content: "Transformational Leader.";
   }
 }
 
