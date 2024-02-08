@@ -68,7 +68,7 @@
   left: 102%;
   color: #d3c9c9;
   opacity: 0;
-  animation: fadeInText 1.5s forwards ease-in-out; /* Use keyframe animation for the fade-in effect */
+  animation: fadeInText 1.5s forwards ease-in-out; 
   animation-delay: 2s;
 }
 

@@ -6,9 +6,19 @@
 
 .timeline-title h2 {
   font-size: 2em;
-  position: relative;
+  text-align: center;
+  margin-top: 6%;
+  margin-bottom: 2.5%;
   left: 2.5%;
-  color: #d3c9c9
+  color: #d3c9c9;
+}
+
+.timeline-title h3 {
+  font-size: 1.5rem;
+  color: #d3c9c9;
+  text-align: center;
+  margin-bottom: 8%;
+  color: #d3c9c9;
 }
 
 .experience-section {
@@ -24,40 +34,19 @@
   position: relative;
   max-width: 100%;
   margin: 100px auto;
-  margin-top: 4%;
+  margin-top: 5%;
 }
 
 .timeline-container {
   padding: 10px 27px;
   position: relative;
-  width: 45.7%;
+  width: 38%;
   opacity: 1;
 }
 
-.text-box {
-  padding: 10px 10px;
-  background: #fafafa;
-  font-size: 0.75rem;
-  margin-bottom: -3%;
-}
-
-.text-box h3 {
-  font-size: 1rem;
-  margin: 0;
-}
-
-.text-box h2 {
-  font-size: 0.85rem;
-  margin: 0;
-}
-
-.text-box small {
-  display: inline-block;
-  margin: 0;
-}
-
 .left-container {
-  left: 0;
+  left: 8%;
+  text-align: right;
 }
 
 .right-container {
@@ -67,47 +56,70 @@
 .experience-section::before {
   content: "";
   position: absolute;
-  width: 6px;
-  height: 95%;
-  top: 30%;
-  background: #fafafa;
+  width: 3px;
+  height: 91%;
+  background: #d3c9c9;
   border-radius: 10px;
-  top: 8%;
+  top: 10%;
   left: 50%;
-  margin-left: -3px;
-  z-index: -1;
-  animation: moveline 6s linear forwards;
 }
 
 .left-container-arrow {
-  height: 0px;
-  width: 0;
+  height: 15px;
+  width: 15px;
   position: absolute;
+  background-color: #d3c9c9;
   z-index: 1;
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-left: 21px solid #fafafa;
-  top: 40px;
-  right: 6px;
+  border-radius: 50%;
+  top: 17px;
+  right: -6px;
 }
 
 .right-container-arrow {
-  height: 0;
-  width: 0;
+  height: 15px;
+  width: 15px;
   position: absolute;
   z-index: 1;
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-right: 21px solid #fafafa;
-  top: 40px;
-  left: 6px;
+  background-color: #d3c9c9;
+  z-index: 1;
+  border-radius: 50%;
+  top: 16px;
+  left: -6px;
 }
 
-/* .dashed-line {
-  height: 0;
-  margin: 20px 0;
-  border-top: 4px dashed #ccc;
-} */
+.text-box h2 {
+  font-size: 1.3rem;
+  margin: 0;
+  color: #1ca98d;
+}
+
+.text-box h3 {
+  font-size: 1rem;
+  margin: 0;
+  color: #d3c9c9;
+}
+
+.text-box small {
+  display: inline-block;
+  margin: 0;
+  color: #d3c9c9;
+}
+
+.text-box h5 {
+  display: inline-block;
+  font-size: 0.8rem;
+  margin: 0;
+  color: #d3c9c9;
+}
+
+.text-box p {
+  color: #d3c9c9;
+}
+
+.highlight {
+  color: #d3c9c9;
+  background-color: rgba(28, 169, 141, 0.6);
+}
 
 @media (max-width: 1200px) {
   .experience-section {
