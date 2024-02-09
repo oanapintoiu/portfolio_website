@@ -16,6 +16,8 @@
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .contact-form {
@@ -51,9 +53,10 @@
   padding: 0.6rem 1.2rem;
   color: #d3c9c9;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   letter-spacing: 0.5px;
   border-radius: 25px;
+  position: relative;
 }
 
 textarea.input {
@@ -67,7 +70,7 @@ textarea.input {
 .input-container label,
 .message-label {
   position: absolute;
-  transform: translateY(0);
+  border-radius: 5px;
   padding: 0 0.4rem;
   color: #d3c9c9;
   font-size: 0.9rem;
@@ -75,16 +78,17 @@ textarea.input {
   pointer-events: none;
   z-index: 1000;
   transition: 0.5s;
-  background-color: #137b66;
+  background: #137b66;
 }
 
 .input-container label {
-  bottom: 30px;
+  top: -7px;
   left: 25px;
 }
 
 .message-label {
-  top: -5px;
+  top: 6px;
+  left: 25px;
 }
 
 .input-container.textarea label {

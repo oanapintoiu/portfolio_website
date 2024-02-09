@@ -13,7 +13,7 @@
   font-size: 1.5rem;
   color: #d3c9c9;
   text-align: center;
-  margin-bottom: 10%;
+  margin-bottom: 6%;
 }
 
 .skill-type h5 {
@@ -68,7 +68,7 @@
   left: 102%;
   color: #d3c9c9;
   opacity: 0;
-  animation: fadeInText 1.5s forwards ease-in-out; 
+  animation: fadeInText 1.5s forwards ease-in-out;
   animation-delay: 2s;
 }
 
