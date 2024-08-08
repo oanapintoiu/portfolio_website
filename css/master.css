@@ -1,9 +1,6 @@
 @import url(body_all_sections.css);
 @import url(nav_bar.css);
 @import url(scroll_up_down.css);
-@import url(home_page.css);
-@import url(about_section.css);
-@import url(skills_section.css);
-@import url(experience.css);
+@import url(home.css);
 @import url(portfolio.css);
 @import url(contact.css);

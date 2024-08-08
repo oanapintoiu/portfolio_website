@@ -24,22 +24,16 @@ header {
   font-weight: 600;
   font-size: 0.9rem;
   color: var(--text);
-  text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  margin: 0 4%;
+  margin: 0 6.5%;
   font-family: "Montserrat", sans-serif;
-  list-style: none;
-  text-decoration: none;
 }
 
 .navlist,
 .social-media {
   list-style: none;
   display: flex;
-}
-
-.navlist {
   padding-left: 0;
   padding-right: 0;
 }
@@ -58,10 +52,9 @@ header {
 
 .navlist a {
   position: relative;
-  margin: 0 0%;
+  margin: 0;
   font-weight: 600;
   font-size: 0.75rem;
-  color: var(--text);
   --spacing: 0.6em;
   color: inherit;
   display: inline-block;
@@ -69,11 +62,10 @@ header {
   text-transform: uppercase;
   letter-spacing: 1.5px;
   font-family: "Montserrat", sans-serif;
-  list-style: none;
   text-decoration: none;
 }
 
-.navlist a:after {
+.navlist a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -110,10 +102,16 @@ header {
 .github {
   background: #1ca98d;
   border-color: #15866f;
-  color: #333;
+  color: var(--text-inverse);
 }
 
-.github:hover {
+.freeCodeCamp {
+  background-color: #3b3b4f;
+  color: #d0d0d5;
+}
+
+.github:hover, 
+.freeCodeCamp:hover {
   background: var(--text);
   border-color: var(--text);
 }
@@ -123,6 +121,14 @@ header {
   --text-inverse: #f3f2f2;
   --background: #f3f2f2;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nav-scrolled .freeCodeCamp {
+  background-color:  #d0d0d5;
+}
+
+.nav-scrolled .freeCodeCamp:hover {
+  background-color: var(--text);
 }
 
 #social-media-icon {
@@ -147,8 +153,6 @@ header {
     max-width: 25vw;
     width: auto;
     background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
     flex-direction: column;
     padding: 20px 20px;
     transition: all 0.55s ease;
@@ -159,7 +163,6 @@ header {
   }
 
   .navlist a {
-    margin-left: 0;
     display: block;
     margin: 5px 0;
     color: #f4f4f4 !important;

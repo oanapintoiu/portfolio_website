@@ -4,7 +4,7 @@
   margin: 0% 0;
 }
 
-.portfolio-title h2 {
+h2 {
   font-size: 2em;
   text-align: center;
   margin-top: 5%;
@@ -13,12 +13,14 @@
   color: #d3c9c9;
 }
 
-.portfolio-title h3 {
+h3 {
   font-size: 1.5rem;
   color: #d3c9c9;
   text-align: center;
   margin-bottom: 6%;
 }
+
+/* conatiner */
 
 .portfolio-container {
   display: grid;
@@ -47,7 +49,9 @@
   transform: scale(1.1);
 }
 
-.portfolio-box .portfolio-layer {
+/* layer */
+
+.portfolio-layer {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -69,16 +73,16 @@
   transform: translateY(0%);
 }
 
-.portfolio-layer h4 {
+h4 {
   font-size: 1.5em;
 }
 
-.portfolio-layer p {
+p {
   font-size: 1em;
   margin: -5% 0 3%;
 }
 
-.portfolio-layer .portfolio-social-media {
+.portfolio-social-media {
   display: flex;
   flex-direction: row;
 }

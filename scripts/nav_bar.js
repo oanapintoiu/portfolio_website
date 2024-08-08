@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector("header");
-  const sectionOne = document.querySelector(".home_page");
+  const sectionOne = document.querySelector(".home");
 
   const sectionOneOptions = {
     rootMargin: "-50px 0px 0px 0px",

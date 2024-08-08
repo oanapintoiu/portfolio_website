@@ -76,7 +76,7 @@ textarea.input {
   font-size: 0.9rem;
   font-weight: 400;
   pointer-events: none;
-  z-index: 1000;
+  z-index: 900;
   transition: 0.5s;
   background: #137b66;
 }
@@ -89,6 +89,15 @@ textarea.input {
 .message-label {
   top: 6px;
   left: 25px;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875em;
+  display: none; 
+}
+.input:invalid + .error-message {
+  display: block;
 }
 
 .input-container.textarea label {
@@ -187,3 +196,4 @@ textarea.input {
     border-radius: 10px;
   } */
 }
+

@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
   const scrollDownLink = document.getElementById("scroll-down-link");
-  const aboutSection = document.getElementById("about");
   const contactSection = document.getElementById("contact");
   const scrollUpLink = document.getElementById("scroll-up-link");
 
@@ -26,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  const welcomeSection = document.getElementById("portfolio");
+
   const upObserver = new IntersectionObserver(handleUpIntersection, {
     threshold: 0.8,
   });
