@@ -59,7 +59,13 @@
               >freeCodeCamp</a
             >
           </li>
-          <li><a class="navlink-btn" href="#">Resume</a></li>
+          <li>
+            <a
+              class="navlink-btn"
+              href="https://drive.google.com/file/d/1zr43xarGTckWUPAcv0LxZB6UaC1S-Iph/view?usp=sharing"
+              >Resume</a
+            >
+          </li>
           <li class="separator"></li>
           <li><a href="#home" class="navlink">Home</a></li>
           <li><a href="#portfolio" class="navlink">Portfolio</a></li>
@@ -85,7 +91,7 @@
               <a
                 class="bx bxs-file-pdf"
                 id="social-media-icon"
-                href="https://github.com/oanapintoiu"
+                href="https://drive.google.com/file/d/1zr43xarGTckWUPAcv0LxZB6UaC1S-Iph/view?usp=sharing"
               ></a>
             </li>
           </div>
@@ -99,7 +105,7 @@
     <main>
       <!-- SECTION WELCOME -->
       <section class="home" id="home">
-        <div class="animated-text"> <span></span></div>
+        <div class="animated-text"><span></span></div>
 
         <!-- scroll down button -->
         <a id="scroll-down-link" href="#portfolio" class="scroll-down-link"
@@ -107,7 +113,6 @@
         ></a>
       </section>
 
-  
       <!-- SECTION PORTFOLIO -->
       <section class="portfolio" id="portfolio">
         <div class="portfolio-title">
@@ -192,57 +197,67 @@
       <section class="container" id="contact">
         <div class="form">
           <div class="contact-info">
-            <h2 class="title">Like what you see?</h2>
-            <p class="text">
-              Excited about the possibility of working together? I'd love to
-              engage in a conversation and discuss how my skills can contribute
-              to your team and business so feel free to get in touch.
+            <h2 class="title">Let's work together</h2>
+            <p class="text position">
+              Ready to turn bugs into features and coffee into code? Or was
+              itmore bugs into coffee and features into code?<br /><br />
+              Either way, let'schat and sort it all out!
             </p>
-
-            <div class="info">
-              <div class="information">
-                <img src="images/contact/location.png" class="icon" alt="" />
-                <p>London</p>
-              </div>
-              <div class="information">
-                <img src="images/contact/email.png" class="icon" alt="" />
-                <p>example@example.com</p>
-              </div>
-              <div class="information">
-                <img src="images/contact/phone.png" class="icon" alt="" />
-                <p>+447700 000 000</p>
-              </div>
-            </div>
-
-            <div class="social-media">
-              <p>Connect with me :</p>
-              <div class="social-icons">
-                <a href="#"><i class="bx bxl-github"></i></a>
-
-                <a href="#"><i class="bx bxl-linkedin"></i></a>
-              </div>
+            <div class="social-icons">
+              <a href="#"><i class="bx bxl-github"></i></a>
+              <a href="#"><i class="bx bxl-linkedin"></i></a>
             </div>
           </div>
 
           <div class="contact-form">
-            <form  id="form" action="http://localhost:3000/submit" method="POST" autocomplete="off">
+            <form
+              id="form"
+              action="http://localhost:3000/submit"
+              method="POST"
+              autocomplete="off"
+            >
               <h2 class="title">Contact me</h2>
               <div class="input-container">
-                <input id="name" class="input" name="name"  type="text"  required/>
+                <input
+                  id="name"
+                  class="input"
+                  name="name"
+                  type="text"
+                  required
+                />
                 <label for="name">Name</label>
               </div>
               <div class="input-container">
-                <input id="email"  class="input" name="email" type="email"  required/>
+                <input
+                  id="email"
+                  class="input"
+                  name="email"
+                  type="email"
+                  required
+                />
                 <label for="email">Email</label>
               </div>
               <div class="input-container">
-                <input id="mobile" class="input" name="mobile" type="text" pattern="[+0-9]*" title="Please enter a valid phone number using digits from 0 to 9 and/or the optional '+'." required/>
+                <input
+                  id="mobile"
+                  class="input"
+                  name="mobile"
+                  type="text"
+                  pattern="[+0-9]*"
+                  title="Please enter a valid phone number using digits from 0 to 9 and/or the optional '+'."
+                  required
+                />
                 <label for="mobile">Mobile</label>
                 <div class="error-message"></div>
               </div>
               <div class="input-container">
                 <textarea id="message" name="message" class="input"></textarea>
-                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <input
+                  type="checkbox"
+                  name="botcheck"
+                  class="hidden"
+                  style="display: none"
+                />
                 <label for="message" class="message-label">Message</label>
               </div>
               <input type="submit" value="Send" class="btn" />

@@ -40,6 +40,12 @@
   margin-bottom: 0.7rem;
 }
 
+.text {
+  color: #d3c9c9;
+  margin: 6rem 1rem 2rem 1rem;
+  font-size: 1.1rem;
+}
+
 .input-container {
   position: relative;
   margin: 4% 0;
@@ -76,9 +82,10 @@ textarea.input {
   font-size: 0.9rem;
   font-weight: 400;
   pointer-events: none;
-  z-index: 900;
+  z-index: 1000;
   transition: 0.5s;
   background: #137b66;
+   z-index: 900;
 }
 
 .input-container label {
@@ -89,15 +96,6 @@ textarea.input {
 .message-label {
   top: 6px;
   left: 25px;
-}
-
-.error-message {
-  color: red;
-  font-size: 0.875em;
-  display: none; 
-}
-.input:invalid + .error-message {
-  display: block;
 }
 
 .input-container.textarea label {
@@ -130,13 +128,7 @@ textarea.input {
 }
 
 .contact-info .title {
-  /* color: #137B66; */
   color: #d3c9c9;
-}
-
-.text {
-  color: #d3c9c9;
-  margin: 1.5rem 0 2rem 0;
 }
 
 .information {
@@ -147,35 +139,25 @@ textarea.input {
   font-size: 0.95rem;
 }
 
-.icon {
-  width: 28px;
-  margin-right: 0.7rem;
-}
-
-.social-media {
-  padding-top: 2%;
-}
-
-.social-media p {
-  color: #333;
-}
-
 .social-icons {
   display: flex;
-  padding: 2% 0% 0% 2%;
+  padding: 20% 0% 0% 2%;
+  align-items: center;
+  justify-content: center;
 }
 
 .social-icons a {
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
   border-radius: 5px;
   background: linear-gradient(45deg, #137b66, #149279);
   color: #d3c9c9;
   text-align: center;
-  line-height: 35px;
-  margin-right: 0.5rem;
+  line-height: 50px;
+  margin-right: 1rem;
   transition: 0.3s;
 }
+
 
 .social-icons a:hover {
   transform: scale(1.05);

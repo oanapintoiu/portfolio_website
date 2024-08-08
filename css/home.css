@@ -56,15 +56,15 @@
 @keyframes words {
   0%,
   33% {
-    content: "Welcome to my portfolio";
+    content: "welcome to my portfolio";
   }
   34%,
   66.66% {
-    content: "Driven by passion";
+    content: "driven by passion";
   }
   67%,
   100% {
-    content: "Empowered by learning";
+    content: "empowered by learning";
   }
 }
 
