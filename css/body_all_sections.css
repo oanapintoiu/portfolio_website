@@ -18,32 +18,6 @@ html {
   overflow-x: hidden;
 }
 
-#about {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.9),
-      rgba(0, 0, 0, 0.9)
-    ),
-    url(../images/hello.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  height: 100vh;
-}
-
-#experience {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.9),
-      rgba(0, 0, 0, 0.9)
-    ),
-    url(../images/peak.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-}
 
 #contact {
   background-image: linear-gradient(
@@ -57,9 +31,9 @@ html {
   background-position: center;
   background-attachment: fixed;
   height: 85vh;
+  padding: 4% 6%;
 }
 
-#skills,
 #portfolio {
   background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)),
     url("https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
@@ -68,35 +42,21 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  height: 100vh;
+  height: 110vh;
   background-color: #fafafa;
+  padding: 8% 8%;
 }
 
-#about,
-#experience,
 #contact,
 #portfolio {
   min-height: 45em;
-  padding: 4% 6%;
   overflow: hidden;
 }
 
-#skills {
-  min-height: 45em;
-  padding: 4% 6%;
-  overflow: hidden;
-}
 
 @media (max-width: 700px) {
-  #about,
-  #experience,
   #contact,
   #portfolio {
     padding: 5% 7%;
-  }
-
-  #skills {
-    padding: 5% 10%;
-    height: 80vh;
   }
 }

@@ -23,7 +23,6 @@
 .contact-form {
   background-color: #137b66;
   position: relative;
-  /* border-radius: 10px; */
 }
 
 .contact-form form {
@@ -35,7 +34,7 @@
 .title {
   color: #d3c9c9;
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 2;
   margin-bottom: 0.7rem;
 }
@@ -85,7 +84,7 @@ textarea.input {
   z-index: 1000;
   transition: 0.5s;
   background: #137b66;
-   z-index: 900;
+  z-index: 900;
 }
 
 .input-container label {
