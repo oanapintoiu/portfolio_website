@@ -18,7 +18,7 @@ h2 {
 }
 
 .show-container {
-  padding: 1px 30px; 
+  padding: 1px 30px;
   border-radius: 10px 10px 10px 10px;
   background-color: transparent;
   box-shadow: 0 0 10px rgba(140, 143, 140, 0.8);
@@ -40,6 +40,24 @@ p {
   color: #f3f2f2;
 }
 
+.word {
+  font-size: 0.8rem;
+  color: white;
+  display: flex;
+  gap: 0.7rem;
+}
+
+.word-box {
+  display: flex;
+  background-color: transparent;
+  padding: 0.5rem 0.5rem;
+  margin-bottom: 4%;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(140, 143, 140, 0.8);
+}
 
 /* Container Styling */
 .portfolio-container {
@@ -57,7 +75,7 @@ p {
   flex-direction: column;
   height: 300px;
   overflow: hidden;
-  position: relative; 
+  position: relative;
 }
 
 .portfolio-content {
@@ -132,6 +150,7 @@ p {
 .portfolio-social-media {
   display: flex;
   justify-content: center;
+  margin-top: 1%;
 }
 
 .portfolio-layer a i {
@@ -147,8 +166,11 @@ p {
   border-radius: 50%;
 }
 
-.portfolio-layer a, .show-container a {
+.portfolio-layer a,
+.show-container a,
+.project-title a {
   text-decoration: none;
+  color: #f3f2f2;
 }
 
 /* Media Queries */
