@@ -161,19 +161,14 @@ textarea.input {
   transform: scale(1.05);
 }
 
+
 @media screen and (max-width: 768px) {
   .form {
-    /* background-color: transparent; 
-    box-shadow: none;  */
     grid-template-columns: 1fr;
   }
 
   .contact-form form {
     padding: 5% 17% 5% 5%;
   }
-
-  /* .contact-form {
-    border-radius: 10px;
-  } */
 }
 

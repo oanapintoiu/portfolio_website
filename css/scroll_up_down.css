@@ -86,20 +86,29 @@
   visibility: hidden;
 }
 
-@media (max-width: 1000px) {
-  .scroll-down-link {
-    position: absolute;
-    margin-top: 45%;
-    right: 2%;
-    font-size: 1.2rem;
-  }
-}
 
-@media (max-width: 700px) {
+
+@media (max-width: 760px) {
   .scroll-down-link {
-    position: absolute;
     margin-top: 60%;
     right: 2%;
     font-size: 1.2rem;
   }
 }
+
+@media (min-width: 768px) {
+  .scroll-down-link {
+    margin-top: 40%;
+    right: 2%;
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .scroll-down-link {
+    margin-top: 15%;
+    right: 2%;
+    font-size: 1.2rem;
+  }
+}
+

@@ -174,8 +174,18 @@ p {
 }
 
 /* Media Queries */
-@media (max-width: 700px) {
+@media (max-width: 480px) {
   .portfolio-container {
     grid-template-columns: 1fr;
+    gap: 1.2%;
+  }
+
+  .show-container {
+   display:none;
   }
 }
+
+@media (max-width: 768px) { 
+
+}
+

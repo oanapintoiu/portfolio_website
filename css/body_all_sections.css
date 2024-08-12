@@ -83,9 +83,41 @@ footer > p > i {
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 480px) {
   #contact,
   #portfolio {
-    padding: 5% 7%;
+    height: auto;
+  }
+
+  #contact {
+    padding: 5% 7% 10% 7%;;
+  }
+
+  #portfolio {
+    padding: 5% 7% 100% 7%;
   }
 }
+
+@media (max-width: 768px) {
+  #contact,
+  #portfolio {
+    height: auto;
+  }
+
+  #contact {
+    padding: 5% 7% 10% 7%;;
+  }
+
+  #portfolio {
+    padding: 5% 7% 110% 7%;
+  }
+}
+
+@media (max-width: 1201px)
+{
+  #portfolio {
+    padding: 5% 7% 45% 7%;
+  }
+}
+
+
