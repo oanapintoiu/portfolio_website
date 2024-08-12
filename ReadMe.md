@@ -1,4 +1,4 @@
-# Oana's Portfolio Website [(Deployed)](https://oanapintoiu.github.io/portfolio_website/)
+# Oana's Portfolio Website (Deployed)
 
 This repository contains the source code for my portfolio website, showcasing my professional portfolio, including projects, contact information, and links to social media profiles. It is designed to be visually appealing, interactive, and responsive.
 
