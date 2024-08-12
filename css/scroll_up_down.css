@@ -5,7 +5,7 @@
   right: 2%;
   max-height: 90%;
   min-height: 10%;
-  color: #f4f4f4;
+  color: var(--main-white);
   text-decoration: none;
   font-size: 1.8rem;
   transform-origin: left top;
@@ -29,7 +29,7 @@
 }
 
 .scroll-down-link:hover {
-  text-shadow: 0 0 5px #f4f4f4;
+  text-shadow: 0 0 5px var(--main-white);
 }
 
 .scroll-down-link.hidden {
@@ -49,7 +49,7 @@
   right: 2%;
   max-height: 90%;
   min-height: 10%;
-  color: #137b66;
+  color: var(--main-green);
   text-decoration: none;
   font-size: 1.8rem;
   transform-origin: left top;
@@ -73,7 +73,7 @@
 }
 
 .scroll-up-link:hover {
-  text-shadow: 0 0 5px #333;
+  text-shadow: 0 0 5px var(--main-grey);
 }
 
 .scroll-up-link.hidden {

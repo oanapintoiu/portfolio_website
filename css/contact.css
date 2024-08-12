@@ -2,7 +2,6 @@
   position: relative;
   padding: 0% 0;
   max-width: 100%;
-  margin: 0% 0;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -17,11 +16,11 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   max-width: 90%;
-  margin: 0 auto;
+  margin: 9% 0 0 0;
 }
 
 .contact-form {
-  background-color: #137b66;
+  background-color: var(--main-green);
   position: relative;
 }
 
@@ -32,7 +31,7 @@
 }
 
 .title {
-  color: #d3c9c9;
+  color: var(--secondary-white);
   font-weight: 700;
   font-size: 2rem;
   line-height: 2;
@@ -40,7 +39,7 @@
 }
 
 .text {
-  color: #d3c9c9;
+  color: var(--secondary-white);
   margin: 6rem 1rem 2rem 1rem;
   font-size: 1.1rem;
 }
@@ -53,10 +52,10 @@
 .input {
   width: 100%;
   outline: none;
-  border: 2px solid #d3c9c9;
+  border: 2px solid var(--secondary-white);
   background: none;
   padding: 0.6rem 1.2rem;
-  color: #d3c9c9;
+  color: var(--secondary-white);
   font-weight: 500;
   font-size: 0.9rem;
   letter-spacing: 0.5px;
@@ -77,13 +76,13 @@ textarea.input {
   position: absolute;
   border-radius: 5px;
   padding: 0 0.4rem;
-  color: #d3c9c9;
+  color: var(--secondary-white);
   font-size: 0.9rem;
   font-weight: 400;
   pointer-events: none;
   z-index: 1000;
   transition: 0.5s;
-  background: #137b66;
+  background: var(--main-green);
   z-index: 900;
 }
 
@@ -104,10 +103,10 @@ textarea.input {
 
 .btn {
   padding: 0.6rem 1.3rem;
-  background-color: #d3c9c9;
-  border: 2px solid #d3c9c9;
+  background-color: var(--secondary-white);
+  border: 2px solid var(--secondary-white);
   font-size: 0.95rem;
-  color: #137b66;
+  color: var(--main-green);
   line-height: 1;
   border-radius: 25px;
   outline: none;
@@ -118,7 +117,7 @@ textarea.input {
 
 .btn:hover {
   background-color: transparent;
-  color: #d3c9c9;
+  color: var(--secondary-white)
 }
 
 .contact-info {
@@ -127,12 +126,12 @@ textarea.input {
 }
 
 .contact-info .title {
-  color: #d3c9c9;
+  color: var(--secondary-white);
 }
 
 .information {
   display: flex;
-  color: #d3c9c9;
+  color: var(--secondary-white);
   margin: 0.7rem 0;
   align-items: center;
   font-size: 0.95rem;
@@ -150,7 +149,7 @@ textarea.input {
   height: 50px;
   border-radius: 5px;
   background: linear-gradient(45deg, #137b66, #149279);
-  color: #d3c9c9;
+  color: var(--secondary-white);
   text-align: center;
   line-height: 50px;
   margin-right: 1rem;

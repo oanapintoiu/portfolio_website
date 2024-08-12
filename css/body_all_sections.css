@@ -1,3 +1,11 @@
+:root {
+  --main-orange: #ff7f50;
+  --main-white: #f4f4f4;
+  --main-grey: #333;
+  --main-green: #137b66;
+  --secondary-white: #d3c9c9 ;
+}
+
 main {
   margin: 0;
   padding: 0;
@@ -51,6 +59,27 @@ html {
 #portfolio {
   min-height: 45em;
   overflow: hidden;
+}
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  padding: 0 2rem;
+  background: black;
+}
+
+footer > p {
+  font-size: 1.1rem;
+  text-align: center;
+  color: #fafafa;
+}
+
+footer > p > i {
+  color: var(--main-orange);
+  padding-left: 0.2rem;
 }
 
 

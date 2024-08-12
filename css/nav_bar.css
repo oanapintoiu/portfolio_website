@@ -1,6 +1,6 @@
 header {
-  --text: #f3f2f2;
-  --text-inverse: #333;
+  --text: var(--main-white);
+  --text-inverse: var(--main-grey);
   --background: transparent;
   position: fixed;
   font-size: 0.75rem;
@@ -117,9 +117,9 @@ header {
 }
 
 .nav-scrolled {
-  --text: #333;
-  --text-inverse: #f3f2f2;
-  --background: #f3f2f2;
+  --text: var(--main-grey);
+  --text-inverse: var(--main-white);
+  --background: var(--main-white);
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -165,7 +165,7 @@ header {
   .navlist a {
     display: block;
     margin: 5px 0;
-    color: #f4f4f4 !important;
+    color: var(--main-white) !important;
   }
 
   .navlist.open {

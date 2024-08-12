@@ -32,7 +32,7 @@
 
 .animated-text span::before {
   content: "text";
-  color: #ff7f50;
+  color: var(--main-orange);
   animation: words 12s infinite;
 }
 
@@ -42,7 +42,7 @@
   width: calc(100% + 8px);
   height: 100%;
   background-color: #6b6c6a;
-  border-left: 2px solid #ff7f50;
+  border-left: 2px solid var(--main-orange);
   right: -8px;
   animation: cursor 0.8s infinite, typing 20s steps(14) infinite;
 }

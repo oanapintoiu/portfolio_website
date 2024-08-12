@@ -6,7 +6,7 @@ body_all_sections_old.css
 skills_section.js
 skills_section.css
 index_extra_sections.html
-experience.css
 about_section.css
 server/node_modules
 server/.env
+css/experience.css
