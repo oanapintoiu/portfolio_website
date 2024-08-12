@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-
   const upObserver = new IntersectionObserver(handleUpIntersection, {
     threshold: 0.8,
   });

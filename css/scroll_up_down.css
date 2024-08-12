@@ -86,8 +86,6 @@
   visibility: hidden;
 }
 
-
-
 @media (max-width: 760px) {
   .scroll-down-link {
     margin-top: 60%;

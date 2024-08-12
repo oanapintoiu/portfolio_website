@@ -101,7 +101,6 @@ header {
 
 .github {
   background: #1ca98d;
-  border-color: #15866f;
   color: var(--text-inverse);
 }
 
@@ -110,7 +109,7 @@ header {
   color: #d0d0d5;
 }
 
-.github:hover, 
+.github:hover,
 .freeCodeCamp:hover {
   background: var(--text);
   border-color: var(--text);
@@ -124,7 +123,7 @@ header {
 }
 
 .nav-scrolled .freeCodeCamp {
-  background-color:  #d0d0d5;
+  background-color: #d0d0d5;
 }
 
 .nav-scrolled .freeCodeCamp:hover {

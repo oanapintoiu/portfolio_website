@@ -8,11 +8,11 @@ This repository contains the source code for my resume website. The website show
 
 ## Result
 
-Home Page: 
+Home Page:
 
 ![Portfolio Website Home Page](./images/readme/home_page.png)
 
-Projects Section: 
+Projects Section:
 
 ![Portfolio Website Projects Sections](./images/readme/projects.png)
 
