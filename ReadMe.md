@@ -1,6 +1,6 @@
 # Oana's Resume Website
 
-This repository contains the source code for my portfolio website. The website showcases my professional portfolio, including projects, contact information, and links to social media profiles. It is designed to be visually appealing, interactive, and responsive.
+This repository contains the source code for my portfolio website, showcasing my professional portfolio, including projects, contact information, and links to social media profiles. It is designed to be visually appealing, interactive, and responsive.
 
 ## Table of Contents
 
@@ -57,6 +57,7 @@ Contact Form:
 - **CSS**: Styling of the webpage, including responsive design and animations.
 - **JavaScript**: Interactivity, such as smooth scrolling, menu toggling, and animations.
 - **Node.js**: Used for backend operations (e.g., form submission handling).
+- **Express**: Framework for building and managing the server, handling routing, middleware, and static file serving.
 
 ### External Libraries
 
