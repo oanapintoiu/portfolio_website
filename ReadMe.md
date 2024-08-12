@@ -1,6 +1,6 @@
 # Oana's Resume Website
 
-This repository contains the source code for my resume website. The website showcases Oana's professional portfolio, including projects, contact information, and links to social media profiles. It is designed to be visually appealing, interactive, and responsive across various devices.
+This repository contains the source code for my portfolio website. The website showcases my professional portfolio, including projects, contact information, and links to social media profiles. It is designed to be visually appealing, interactive, and responsive.
 
 ## Table of Contents
 
