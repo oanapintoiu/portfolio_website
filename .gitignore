@@ -4,5 +4,5 @@ all.js
 experience_vs.css
 body_all_sections_old.css
 index_extra_sections.html
-server/node_modules
+node_modules
 server/.env
