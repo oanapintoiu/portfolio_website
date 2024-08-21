@@ -1,7 +1,8 @@
+require("dotenv").config({ path: __dirname + '/.env' });
+console.log("Web3Forms API Key:", process.env.WEB3FORMS_API_KEY);
 const express = require("express");
 const axios = require("axios");
 const bodyParser = require("body-parser");
-require("dotenv").config();
 const path = require("path");
 
 const app = express();
@@ -11,10 +12,16 @@ app.use(express.static(path.join(__dirname, "../")));
 
 app.post("/submit", async (req, res) => {
   try {
-    const response = await axios.post("https://api.web3forms.com/submit", {
+    const accessKey = process.env.WEB3FORMS_API_KEY;
+    console.log("Access Key:", accessKey);
+
+    const formData = {
       ...req.body,
-      access_key: process.env.WEB3FORMS_API_KEY,
-    });
+      access_key: accessKey,
+    };
+
+    await axios.post("https://api.web3forms.com/submit", formData);
+
     res.redirect("/redirect-success");
   } catch (error) {
     console.error("Error details:", {
