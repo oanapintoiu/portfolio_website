@@ -1,4 +1,4 @@
-require("dotenv").config({ path: __dirname + '/.env' });
+require("dotenv").config();
 console.log("Web3Forms API Key:", process.env.WEB3FORMS_API_KEY);
 const express = require("express");
 const axios = require("axios");

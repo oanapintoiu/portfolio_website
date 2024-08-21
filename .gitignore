@@ -5,4 +5,4 @@ experience_vs.css
 body_all_sections_old.css
 index_extra_sections.html
 node_modules
-server/.env
+.env
