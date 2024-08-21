@@ -1,5 +1,4 @@
 require("dotenv").config();
-console.log("Web3Forms API Key:", process.env.WEB3FORMS_API_KEY);
 const express = require("express");
 const axios = require("axios");
 const bodyParser = require("body-parser");
@@ -13,7 +12,6 @@ app.use(express.static(path.join(__dirname, "../")));
 app.post("/submit", async (req, res) => {
   try {
     const accessKey = process.env.WEB3FORMS_API_KEY;
-    console.log("Access Key:", accessKey);
 
     const formData = {
       ...req.body,
