@@ -73,7 +73,7 @@
 }
 
 .scroll-up-link:hover {
-  text-shadow: 0 0 5px var(--main-grey);
+  text-shadow: 0 0 10px var(--main-green);
 }
 
 .scroll-up-link.hidden {
