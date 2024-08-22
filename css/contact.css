@@ -51,9 +51,8 @@
 
 .input {
   width: 100%;
-  outline: none;
   border: 2px solid var(--secondary-white);
-  background: none;
+  background-color: var(--main-green);
   padding: 0.6rem 1.2rem;
   color: var(--secondary-white);
   font-weight: 500;
@@ -61,6 +60,15 @@
   letter-spacing: 0.5px;
   border-radius: 25px;
   position: relative;
+  outline: none;
+  box-shadow: none;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: var(
+    --secondary-white
+  ) !important; /* Ensures text color remains white */
+  -webkit-box-shadow: 0 0 0px 1000px var(--main-green) inset !important;
 }
 
 textarea.input {
@@ -117,7 +125,7 @@ textarea.input {
 
 .btn:hover {
   background-color: transparent;
-  color: var(--secondary-white)
+  color: var(--secondary-white);
 }
 
 .contact-info {
@@ -156,11 +164,9 @@ textarea.input {
   transition: 0.3s;
 }
 
-
 .social-icons a:hover {
   transform: scale(1.05);
 }
-
 
 @media screen and (max-width: 768px) {
   .form {
@@ -171,4 +177,3 @@ textarea.input {
     padding: 5% 17% 5% 5%;
   }
 }
-
