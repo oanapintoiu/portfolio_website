@@ -8,20 +8,6 @@ This repository contains the source code for my portfolio website, showcasing my
 
 ## Result
 
-Home Page:
-
-![Portfolio Website Home Page](./images/readme/home_page.png)
-
-Projects Section:
-
-![Portfolio Website Projects Sections](./images/readme/projects.png)
-
-Contact Form:
-
-![Portfolio Website Contact Form](./images/readme/contact.png)
-
-Full Website:
-
 ![Full Website](./images/readme/portfolio.gif)
 
 ## Features
