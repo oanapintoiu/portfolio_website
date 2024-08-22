@@ -440,6 +440,8 @@
                   class="input"
                   name="email"
                   type="email"
+                  pattern=".+\.com$"
+                  title="Please add '.com' at the end of the email adress."
                   required
                 />
                 <label for="email">Email</label>
@@ -452,6 +454,8 @@
                   type="text"
                   pattern="[+0-9]*"
                   title="Please enter a valid phone number using digits from 0 to 9 and/or the optional '+'."
+                  minlength="10"
+                  maxlength="15"
                   required
                 />
                 <label for="mobile">Mobile</label>
