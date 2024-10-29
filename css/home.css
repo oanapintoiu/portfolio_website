@@ -41,7 +41,7 @@
   position: absolute;
   width: calc(100% + 8px);
   height: 100%;
-  background-color: #5f5f5f;
+  background-color: #565758;
   border-left: 2px solid var(--main-orange);
   right: -8px;
   animation: cursor 0.8s infinite, typing 20s steps(14) infinite;
